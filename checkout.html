@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce Website</title>
+
+    <!-- CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+   <!-- External CSS File -->
+ <link rel="stylesheet" href="style.css">
+
+
+ 
+ <link href="https://fonts.googleapis.com/css2?family=Aclonica&display=swap" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap" rel="stylesheet">
+
+</head>
+<body>
+     <!-- Navigation Menu -->
+     <nav class="nav fixed-top">
+      
+      <img src="images/logo1.png" alt="Logo" height="75px" class="nav_logo-img">
+  
+      <div class="nav_menu" id="nav-menu">
+        <div class="nav_menu-top">
+                <img src="images/logo1.png" alt=""  class="nav_menu-logo">
+          
+
+            <div class="nav_close" id="nav-close">
+                <i class="fa-solid fa-xmark text-white"></i>
+            </div>
+        </div>
+       <ul class="nav_list">
+         <li class="nav_item">
+           <a href="index.html" class="nav_link">HOME</a>
+         </li>
+  
+         <li class="nav_item">
+           <a href="shop.html" class="nav_link">SHOP</a>
+         </li>
+  
+         <li class="nav_item">
+           <a href="contact.html" class="nav_link">CONTACT US</a>
+         </li>
+  
+         <li class="nav_item">
+           <a href="login.html" class="nav_link">LOGIN</a>
+         </li>
+       </ul>
+  
+      
+      </div>
+  
+      <div class="header_user-actions">
+  
+        <a href="#" class="header_action-btn">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <span class="text-white d-none d-md-inline">Search</span>
+        </a>
+  
+       <a href="wishlist.html" class="header_action-btn">
+         <i class="fa-regular fa-heart text-white" aria-hidden="true"></i>
+         <span class="text-white d-none d-md-inline">Wishlist</span>
+       </a>
+  
+       <a href="cart.html" class="header_action-btn">
+         <i class="fa fa-shopping-bag text-white" aria-hidden="true"></i>
+         <span class="text-white d-none d-md-inline">Bag</span>
+         <span class="bag_item_count">0</span>
+       </a>
+
+       <div class="header_action-btn nav_toggle" id="nav-toggle">
+        <i class="fas fa-outdent"></i>
+       </div>
+      </div>
+      
+  
+   </nav>
+
+      <!-- Checkout -->
+      <section class="checkout section">
+        <div class="checkout_container container">
+            <div class="checkout_group">
+                <h3 class="section_title">Billing Details</h3>
+
+                <form action="" class="form">
+                    <input type="text" placeholder="Your Name" class="form_input">
+
+                    <input type="text" placeholder="Your Address" class="form_input">
+
+                    <input type="text" placeholder="Your City" class="form_input">
+
+                    <input type="text" placeholder="Your Country" class="form_input">
+
+                    <input type="text" placeholder="Your Pincode" class="form_input">
+
+                    <input type="text" placeholder="Your Phone No." class="form_input">
+
+                    <input type="email" placeholder="Your Email" class="form_input">
+
+                    <h3 class="checkout_title">Additional Information</h3>
+
+                    <textarea name="" id="" placeholder="Order Note.." cols="50" rows="10" class="addi_info"></textarea>
+
+
+
+
+                </form>
+            </div>
+
+            <div class="checkout_group">
+                <h3 class="section_subtitle">Cart Total</h3>
+
+                <table class="order_table">
+                    <tr>
+                        <th colspan="2">Products</th>
+                        <th>Total</th>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <img src="images/product-1-1.jpg" alt="" class="order_img">
+                        </td>
+
+                        <td>
+                            <h3 class="table_title">Yidertan Womens Summer Blue</h3>
+                            <p class="table_quantity">x 2</p>
+                        </td>
+
+                        <td>
+                            <span class="table_price">₹600</span>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <img src="images/product-8-1.jpg" alt="" class="order_img">
+                        </td>
+
+                        <td>
+                            <h3 class="table_title">Yidertan Womens Summer Blue</h3>
+                            <p class="table_quantity">x 2</p>
+                        </td>
+
+                        <td>
+                            <span class="table_price">₹600</span>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <img src="images/product-5-1.jpg" alt="" class="order_img">
+                        </td>
+
+                        <td>
+                            <h3 class="table_title">Yidertan Womens Summer Blue</h3>
+                            <p class="table_quantity">x 2</p>
+                        </td>
+
+                        <td>
+                            <span class="table_price">₹600</span>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><span class="order_subtitle">Subtotal</span></td>
+                        <td colspan="2"><span class="table_price">₹600</span></td>
+                    </tr>
+
+                    <tr>
+                        <td><span class="order_subtitle">Shipping</span></td>
+                        <td colspan="2"><span class="table_price">Free Shipping</span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="order_subtitle">Total</span></td>
+                        <td colspan="2"><span class="order_grand_total">₹600</span></td>
+                     </tr>
+                </table>
+
+                <div class="payment_methods">
+                    <h3 class="checkout_title payment_title">Payment</h3>
+
+                    <div class="payment_option">
+                        <input type="radio" name="radio" id="direct_transfer" checked class="payment_input">
+                        <label for="direct_transfer" class="payment_label">Direct Bank Transfer</label>
+                    </div>
+
+                    <div class="payment_option">
+                        <input type="radio" name="radio" id="cod" class="payment_input">
+                        <label for="cod" class="payment_label">Cash on Delivery</label>
+                    </div>
+                </div>
+
+                <button class="btn">Place Order</button>
+            </div>
+        </div>
+      </section>
+
+
+       <!-- Footer -->
+       <footer>
+        <div class="footer-col">
+          <h4>Company</h4>
+              <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Our Services</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Affiliate Program</a></li>
+      
+              </ul>
+        </div>
+      
+        <div class="footer-col">
+          <h4>Get Help</h4>
+          <ul>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Shipping</a></li>
+            <li><a href="#">Returns</a></li>
+            <li><a href="#">Order Status</a></li>
+            <li><a href="#">Payment Options</a></li>
+          </ul>
+        </div>
+      
+        <div class="footer-col">
+          <h4>Online Shop</h4>
+          <ul>
+            <li><a href="#">Watch</a></li>
+            <li><a href="#">Bag</a></li>
+            <li><a href="#">Shoes</a></li>
+            <li><a href="#">Dress</a></li>
+      
+          </ul>
+        </div>
+      
+        <div class="footer-col">
+          <h4>Follow us</h4>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+      
+          </div>
+      
+      </footer>
+
+       <!-- JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  
+  <!-- Main JS -->
+<script src="script.js"></script>
+</body>
+</html>
